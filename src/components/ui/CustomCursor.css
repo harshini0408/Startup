@@ -1,0 +1,73 @@
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  will-change: transform;
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+.cursor-dot[data-visible="true"],
+.cursor-ring[data-visible="true"] {
+  opacity: 1;
+}
+
+/* Inner dot */
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-cream);
+  transition: width 0.3s var(--ease-out-expo),
+              height 0.3s var(--ease-out-expo),
+              background-color 0.3s ease,
+              opacity 0.3s ease;
+}
+
+/* Outer ring */
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid rgba(243, 240, 232, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.4s var(--ease-out-expo),
+              height 0.4s var(--ease-out-expo),
+              border-color 0.3s ease,
+              background-color 0.3s ease,
+              opacity 0.3s ease;
+}
+
+/* Context states */
+.cursor-ring[data-state="view"],
+.cursor-ring[data-state="open"],
+.cursor-ring[data-state="drag"],
+.cursor-ring[data-state="explore"],
+.cursor-ring[data-state="send"] {
+  width: 72px;
+  height: 72px;
+  border-color: var(--color-accent);
+  background-color: rgba(183, 154, 107, 0.12);
+}
+
+.cursor-ring[data-state="link"] {
+  width: 24px;
+  height: 24px;
+  background-color: rgba(243, 240, 232, 0.08);
+}
+
+.cursor-label {
+  font-family: var(--font-sans);
+  font-size: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  white-space: nowrap;
+  user-select: none;
+}

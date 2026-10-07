@@ -1,0 +1,312 @@
+.quote-page {
+  padding-top: clamp(6rem, 12vh, 9rem);
+  padding-bottom: clamp(6rem, 12vh, 10rem);
+  background-color: var(--color-carbon);
+}
+
+.quote-hero {
+  margin-bottom: clamp(3rem, 6vh, 4.5rem);
+  max-width: 850px;
+}
+
+.quote-hero__meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.quote-hero__headline {
+  font-size: clamp(3rem, 7.5vw, 6rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  color: var(--color-cream);
+  margin-bottom: 1.5rem;
+}
+
+.quote-hero__sub {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: var(--color-cream-60);
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+/* Progress */
+.quote-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quote-progress__track {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(239, 236, 230, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.quote-progress__fill {
+  height: 100%;
+  background-color: var(--color-accent);
+  transition: width 0.4s ease;
+}
+
+.quote-progress__labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--color-cream-38);
+}
+
+/* Wizard wrap */
+.quote-wizard-wrap {
+  max-width: 850px;
+}
+
+.quote-wizard {
+  background-color: rgba(14, 14, 14, 0.85);
+  border: 1px solid rgba(239, 236, 230, 0.08);
+  border-radius: var(--radius-md);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+}
+
+.quote-step {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-step__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-cream);
+  line-height: 1.1;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.quote-step__desc {
+  font-size: 0.98rem;
+  color: var(--color-cream-60);
+  margin-bottom: 2.25rem;
+}
+
+/* Options */
+.quote-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.quote-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.quote-option-btn {
+  background-color: rgba(22, 22, 22, 0.6);
+  border: 1px solid rgba(239, 236, 230, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 1.15rem 1.4rem;
+  color: var(--color-cream-80);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  transition: all 0.2s ease;
+}
+
+.quote-option-btn:hover {
+  background-color: rgba(30, 30, 30, 0.8);
+  border-color: rgba(183, 154, 107, 0.3);
+  color: var(--color-cream);
+}
+
+.quote-option-btn--selected {
+  background-color: rgba(183, 154, 107, 0.12);
+  border-color: var(--color-accent);
+  color: var(--color-cream);
+}
+
+.quote-option-check {
+  color: var(--color-accent);
+  font-size: 0.95rem;
+}
+
+/* Form */
+.quote-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.quote-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quote-field__label {
+  font-size: 0.72rem;
+  color: var(--color-cream-80);
+  letter-spacing: 0.12em;
+}
+
+.quote-input,
+.quote-textarea {
+  background-color: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(239, 236, 230, 0.1);
+  border-radius: var(--radius-sm);
+  padding: 0.9rem 1.15rem;
+  color: var(--color-cream);
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.quote-input:focus,
+.quote-textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  background-color: rgba(25, 25, 25, 0.95);
+}
+
+.quote-textarea {
+  resize: vertical;
+}
+
+.quote-error {
+  color: #f87171;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  margin-top: 1.25rem;
+}
+
+/* Actions */
+.quote-actions-wrap {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(239, 236, 230, 0.06);
+}
+
+.quote-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.quote-btn-prev {
+  background: none;
+  border: none;
+  color: var(--color-cream-60);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.quote-btn-prev:hover {
+  color: var(--color-accent);
+}
+
+.quote-btn-next,
+.quote-btn-submit {
+  background-color: var(--color-accent);
+  color: var(--color-carbon);
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.95rem 2rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.quote-btn-next:hover,
+.quote-btn-submit:hover:not(:disabled) {
+  background-color: var(--color-cream);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(183, 154, 107, 0.3);
+}
+
+.quote-btn-submit:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+/* Success */
+.quote-success {
+  background-color: rgba(14, 14, 14, 0.85);
+  border: 1px solid rgba(183, 154, 107, 0.3);
+  border-radius: var(--radius-md);
+  padding: clamp(2.5rem, 5vw, 4rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.quote-success__badge {
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+}
+
+.quote-success__title {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  color: var(--color-cream);
+  line-height: 1.05;
+}
+
+.quote-success__desc {
+  font-size: 1.05rem;
+  color: var(--color-cream-80);
+  line-height: 1.65;
+}
+
+.quote-success__summary {
+  background-color: rgba(8, 8, 8, 0.6);
+  border: 1px solid rgba(239, 236, 230, 0.08);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  font-size: 0.82rem;
+  color: var(--color-cream-80);
+}
+
+.quote-success__summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.quote-success__reset {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .quote-options-grid {
+    grid-template-columns: 1fr;
+  }
+  .quote-form__grid {
+    grid-template-columns: 1fr;
+  }
+  .quote-progress__labels {
+    display: none;
+  }
+}

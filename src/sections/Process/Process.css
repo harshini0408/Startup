@@ -1,0 +1,236 @@
+.process {
+  padding: clamp(6rem, 12vh, 9rem) 0;
+  background-color: var(--color-carbon);
+  position: relative;
+  border-bottom: 1px solid rgba(239, 236, 230, 0.08);
+}
+
+.process__header {
+  margin-bottom: clamp(3rem, 6vh, 5rem);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(239, 236, 230, 0.08);
+}
+
+.process__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.process__tag {
+  color: var(--color-cream-38);
+}
+
+.process__headline {
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: var(--color-cream);
+  max-width: 18ch;
+}
+
+/* Timeline Stepper */
+.process__timeline-nav {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  scrollbar-width: none;
+}
+
+.process__timeline-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.process__nav-btn {
+  background: rgba(17, 17, 17, 0.7);
+  border: 1px solid rgba(239, 236, 230, 0.08);
+  padding: 0.65rem 1.25rem;
+  border-radius: 999px;
+  color: var(--color-cream-60);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.process__nav-btn:hover {
+  border-color: var(--color-cream-60);
+  color: var(--color-cream);
+}
+
+.process__nav-btn--active {
+  background-color: rgba(183, 154, 107, 0.12);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.process__nav-num {
+  opacity: 0.6;
+}
+
+/* Stage Card */
+.process__stage-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.9) 0%, rgba(12, 12, 12, 0.9) 100%);
+  border: 1px solid rgba(183, 154, 107, 0.2);
+  border-radius: var(--radius-lg);
+  padding: clamp(2.5rem, 5vw, 4.5rem);
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.6);
+}
+
+.process__watermark {
+  position: absolute;
+  top: 50%;
+  right: clamp(1rem, 5vw, 4rem);
+  transform: translateY(-50%);
+  font-size: clamp(10rem, 25vw, 24rem);
+  color: rgba(239, 236, 230, 0.025);
+  line-height: 0.8;
+  pointer-events: none;
+  user-select: none;
+}
+
+.process__stage-content {
+  position: relative;
+  z-index: 1;
+  max-width: 65ch;
+}
+
+.process__stage-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(239, 236, 230, 0.08);
+}
+
+.process__stage-controls {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.process__ctrl-btn {
+  background: none;
+  border: none;
+  color: var(--color-cream-60);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.process__ctrl-btn:hover:not(:disabled) {
+  color: var(--color-accent);
+}
+
+.process__ctrl-btn:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.process__stage-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  line-height: 1.05;
+  color: var(--color-cream);
+  letter-spacing: -0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.process__stage-desc {
+  font-size: 1.1rem;
+  color: var(--color-cream-80);
+  line-height: 1.65;
+  margin-bottom: 2.5rem;
+}
+
+.process__deliverables-wrap {
+  background-color: rgba(8, 8, 8, 0.6);
+  border: 1px solid rgba(239, 236, 230, 0.06);
+  border-radius: var(--radius-sm);
+  padding: 1.75rem;
+}
+
+.process__deliv-title {
+  font-size: 0.7rem;
+  color: var(--color-cream-38);
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.process__deliv-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.85rem;
+}
+
+.process__deliv-item {
+  font-size: 0.82rem;
+  color: var(--color-cream);
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.process__deliv-check {
+  color: var(--color-accent);
+  font-size: 0.9rem;
+}
+
+.process__mobile-list {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .process__timeline-nav,
+  .process__stage-card {
+    display: none;
+  }
+  .process__mobile-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .process__mobile-item {
+    background-color: rgba(17, 17, 17, 0.6);
+    border: 1px solid rgba(239, 236, 230, 0.08);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+  }
+  .process__mobile-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+  }
+  .process__mobile-title {
+    font-size: 1.25rem;
+    color: var(--color-cream);
+  }
+  .process__mobile-desc {
+    font-size: 0.92rem;
+    color: var(--color-cream-60);
+    line-height: 1.55;
+    margin-bottom: 1rem;
+  }
+  .process__mobile-deliv {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    font-size: 0.78rem;
+    color: var(--color-accent);
+  }
+}

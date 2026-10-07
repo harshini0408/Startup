@@ -1,0 +1,104 @@
+.not-found-page {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--color-carbon);
+  padding: clamp(6rem, 12vh, 9rem) 0;
+  overflow: hidden;
+}
+
+.not-found__grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(239, 236, 230, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(239, 236, 230, 0.02) 1px, transparent 1px);
+  background-size: 80px 80px;
+  pointer-events: none;
+}
+
+.not-found__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 800px;
+}
+
+.not-found__meta {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+}
+
+.not-found__watermark {
+  font-size: clamp(8rem, 22vw, 20rem);
+  line-height: 0.8;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(239, 236, 230, 0.05);
+  margin-bottom: -1rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+.not-found__headline {
+  font-size: clamp(2.8rem, 7vw, 5.8rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  color: var(--color-cream);
+  margin-bottom: 1.5rem;
+}
+
+.not-found__sub {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: var(--color-cream-60);
+  line-height: 1.6;
+  max-width: 48ch;
+  margin-bottom: 3rem;
+}
+
+.not-found__actions {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.not-found__btn {
+  background-color: var(--color-accent);
+  color: var(--color-carbon);
+  padding: 0.95rem 2rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  transition: all 0.25s ease;
+}
+
+.not-found__btn:hover {
+  background-color: var(--color-cream);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(183, 154, 107, 0.3);
+}
+
+.not-found__secondary {
+  color: var(--color-cream-80);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(239, 236, 230, 0.2);
+  padding: 0.4rem 0;
+  transition: all 0.25s ease;
+}
+
+.not-found__secondary:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}

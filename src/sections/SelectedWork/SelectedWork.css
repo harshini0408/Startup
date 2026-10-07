@@ -1,0 +1,251 @@
+.selected-work {
+  padding: clamp(6rem, 12vh, 9rem) 0;
+  background-color: var(--color-charcoal);
+  border-top: 1px solid rgba(239, 236, 230, 0.08);
+  border-bottom: 1px solid rgba(239, 236, 230, 0.08);
+  position: relative;
+}
+
+.selected-work__header {
+  margin-bottom: clamp(4rem, 8vh, 6rem);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(239, 236, 230, 0.08);
+}
+
+.selected-work__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.selected-work__count {
+  color: var(--color-cream-38);
+}
+
+.selected-work__headline {
+  font-size: clamp(2.6rem, 7vw, 5.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+  color: var(--color-cream);
+  max-width: 16ch;
+}
+
+/* List of massive cards */
+.selected-work__list {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(6rem, 12vh, 10rem);
+}
+
+.selected-work__card {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: clamp(2.5rem, 5vw, 5.5rem);
+  align-items: center;
+  min-height: clamp(500px, 75vh, 850px);
+}
+
+.selected-work__card--reversed {
+  grid-template-columns: 1fr 1.35fr;
+}
+
+.selected-work__card--reversed .selected-work__media-wrap {
+  order: 2;
+}
+
+.selected-work__card--reversed .selected-work__content {
+  order: 1;
+}
+
+/* Media frame */
+.selected-work__media-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: clamp(380px, 55vh, 620px);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background-color: var(--color-carbon);
+  border: 1px solid rgba(239, 236, 230, 0.1);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+}
+
+.selected-work__media-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+}
+
+.selected-work__media-inner {
+  position: absolute;
+  inset: -10%;
+  overflow: hidden;
+}
+
+.selected-work__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  will-change: transform;
+  transition: filter 0.5s ease;
+}
+
+.selected-work__card:hover .selected-work__img {
+  filter: brightness(1.05);
+}
+
+.selected-work__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 8, 8, 0.1) 0%, rgba(8, 8, 8, 0.4) 100%);
+  pointer-events: none;
+}
+
+.selected-work__badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  padding: 0.35rem 0.85rem;
+  background-color: rgba(8, 8, 8, 0.85);
+  border: 1px solid rgba(183, 154, 107, 0.3);
+  color: var(--color-accent);
+  border-radius: 999px;
+  backdrop-filter: blur(12px);
+  z-index: 2;
+}
+
+/* Content column */
+.selected-work__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.selected-work__content-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.selected-work__num {
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  color: var(--color-accent);
+}
+
+.selected-work__year {
+  color: var(--color-cream-38);
+}
+
+.selected-work__title {
+  font-size: clamp(2rem, 3.8vw, 3.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.selected-work__title-link {
+  color: var(--color-cream);
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  display: inline-block;
+}
+
+.selected-work__title-link:hover {
+  color: var(--color-cream);
+  transform: translateX(8px);
+}
+
+.selected-work__client {
+  color: var(--color-cream-38);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  margin-bottom: 1.75rem;
+  display: block;
+}
+
+.selected-work__challenge {
+  background-color: rgba(8, 8, 8, 0.4);
+  border-left: 2px solid var(--color-accent);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.75rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.selected-work__section-tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.16em;
+  color: var(--color-cream-60);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.selected-work__desc {
+  font-size: 0.95rem;
+  color: var(--color-cream-80);
+  line-height: 1.6;
+}
+
+.selected-work__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.65rem;
+  margin-bottom: 2.5rem;
+}
+
+.selected-work__tag {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  padding: 0.3rem 0.7rem;
+  background-color: rgba(239, 236, 230, 0.04);
+  border: 1px solid rgba(239, 236, 230, 0.08);
+  border-radius: 999px;
+  color: var(--color-cream-60);
+}
+
+.selected-work__cta {
+  font-size: var(--text-base) !important;
+  letter-spacing: 0.08em;
+}
+
+/* Footer summary */
+.selected-work__footer {
+  margin-top: clamp(5rem, 10vh, 8rem);
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(239, 236, 230, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.selected-work__footer-text {
+  font-size: 1.05rem;
+  color: var(--color-cream-60);
+  max-width: 48ch;
+}
+
+@media (max-width: 1024px) {
+  .selected-work__card,
+  .selected-work__card--reversed {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+  .selected-work__card--reversed .selected-work__media-wrap {
+    order: 1;
+  }
+  .selected-work__card--reversed .selected-work__content {
+    order: 2;
+  }
+  .selected-work__media-wrap {
+    min-height: 340px;
+    height: 45vh;
+  }
+}

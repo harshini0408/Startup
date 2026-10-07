@@ -1,0 +1,87 @@
+.manifesto {
+  position: relative;
+  background-color: var(--color-charcoal);
+  border-top: 1px solid rgba(239, 236, 230, 0.06);
+  border-bottom: 1px solid rgba(239, 236, 230, 0.06);
+}
+
+.manifesto__pin {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: clamp(4rem, 8vh, 6rem);
+  padding-bottom: clamp(3rem, 6vh, 5rem);
+}
+
+.manifesto__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.manifesto__label {
+  color: var(--color-accent);
+}
+
+.manifesto__indicator {
+  color: var(--color-cream-38);
+}
+
+.manifesto__stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50vh;
+  margin: auto 0;
+}
+
+.manifesto__phrase {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem 0;
+  will-change: transform, opacity;
+  transition: opacity 0.3s ease;
+}
+
+.manifesto__phrase-tag {
+  color: var(--color-accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+}
+
+.manifesto__phrase-text {
+  font-size: clamp(2.4rem, 6.5vw, 5.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+  color: var(--color-cream);
+  max-width: 22ch;
+}
+
+.manifesto__phrase-text--accent {
+  color: var(--color-accent);
+}
+
+.manifesto__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(239, 236, 230, 0.06);
+}
+
+.manifesto__bar {
+  width: 80px;
+  height: 1px;
+  background-color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .manifesto__phrase-text {
+    font-size: clamp(2rem, 8vw, 3.2rem);
+  }
+}

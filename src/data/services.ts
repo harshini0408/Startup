@@ -1,0 +1,174 @@
+import type { Service } from '@/types'
+
+export const services: Service[] = [
+  {
+    id: 'web-digital-experiences',
+    number: '01',
+    title: 'Web & Digital Experiences',
+    description:
+      'We design and build bespoke business websites, high-conversion online stores, and responsive digital platforms engineered to clearly explain your offer and drive commercial results.',
+    deliverables: [
+      'Build business websites that clearly explain who you are and what you offer.',
+      'Create online stores with product listings, shopping carts, and payment options.',
+      'Design websites that are easy to use on phones, tablets, and computers.',
+      'Add enquiry forms, appointment booking, and other ways for customers to reach you.',
+      'Improve existing websites with better layouts, faster loading, and updated features.',
+    ],
+    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'GSAP', 'Sanity / Strapi'],
+    capabilities: ['Business websites', 'Online stores', 'Responsive layouts', 'Booking & forms', 'Site redesigns'],
+    featured: true,
+  },
+  {
+    id: 'saas-product-development',
+    number: '02',
+    title: 'SaaS Product Development',
+    description:
+      'End-to-end engineering of scalable web software, from user accounts and multi-tenant workspaces to subscription billing and daily operational tools.',
+    deliverables: [
+      'Build online software that customers or teams can access through their browser.',
+      'Set up user accounts, company workspaces, and access permissions.',
+      'Add subscription plans, billing, and payment collection.',
+      'Create tools to manage users, daily operations, and customer requests.',
+      'Develop new features as your business and customer needs grow.',
+    ],
+    technologies: ['TypeScript', 'React', 'Python', 'FastAPI', 'PostgreSQL', 'Docker', 'Stripe'],
+    capabilities: ['Browser-based software', 'User & team accounts', 'Subscription billing', 'Admin cockpits', 'Feature scaling'],
+    featured: true,
+  },
+  {
+    id: 'ui-ux-product-design',
+    number: '03',
+    title: 'UI/UX & Product Design',
+    description:
+      'Human-centered interface and interaction design that matches your brand, clarifies page layouts, and eliminates user friction before writing a single line of code.',
+    deliverables: [
+      'Plan clear page layouts so users can easily find what they need.',
+      'Design websites and apps that match your brand.',
+      'Simplify forms, menus, and steps such as signing up or placing an order.',
+      'Create clickable previews so you can try the design before development.',
+      'Review existing designs and fix areas that confuse or slow down users.',
+    ],
+    technologies: ['Figma', 'Design Systems', 'Interactive Prototyping', 'Framer Motion', 'User Testing'],
+    capabilities: ['Layout planning', 'Brand design', 'Flow simplification', 'Clickable previews', 'UX audits'],
+    featured: true,
+  },
+  {
+    id: 'backend-api-engineering',
+    number: '04',
+    title: 'Backend & API Engineering',
+    description:
+      'Resilient server infrastructure, structured database architectures, secure authentication, and high-performance API integrations powering your digital operations.',
+    deliverables: [
+      'Build the systems behind your website or app that handle its daily functions.',
+      'Set up databases to store and organise your business information.',
+      'Connect your software with payment services, business tools, and other platforms.',
+      'Add login systems and permissions to control who can access information.',
+      'Improve how your systems handle requests, share data, and manage errors.',
+    ],
+    technologies: ['Python', 'FastAPI', 'Node.js', 'PostgreSQL', 'Redis', 'Docker', 'AWS'],
+    capabilities: ['System architecture', 'Database setup', 'Platform integrations', 'Auth & permissions', 'Performance & reliability'],
+    featured: true,
+  },
+  {
+    id: 'ai-integration',
+    number: '05',
+    title: 'AI Integration',
+    description:
+      'Practical artificial intelligence embedded directly into your digital products to extract data, summarize lengthy documents, draft content, and automate routine triage.',
+    deliverables: [
+      'Add useful AI features to your existing website, app, or business software.',
+      'Extract details from documents such as invoices, forms, and reports.',
+      'Summarise lengthy documents and help your team find relevant information.',
+      'Draft emails, product descriptions, and other content for your team to review.',
+      'Sort incoming enquiries, feedback, or documents to reduce manual work.',
+    ],
+    technologies: ['Python', 'FastAPI', 'OpenAI / Claude APIs', 'LangChain', 'Vector Search', 'pgvector'],
+    capabilities: ['AI feature integration', 'Document extraction', 'Smart summaries', 'Draft generation', 'Enquiry classification'],
+    featured: true,
+  },
+  {
+    id: 'agentic-ai-automation',
+    number: '06',
+    title: 'Agentic AI & Automation',
+    description:
+      'Intelligent automated workflows and AI assistants that execute repetitive tasks across connected tools, with strict human approval checkpoints whenever needed.',
+    deliverables: [
+      'Automate repetitive tasks such as data entry, reminders, and status updates.',
+      'Build AI assistants that carry out tasks across connected business tools.',
+      'Set up workflows for enquiries, follow-ups, document processing, and approvals.',
+      'Add approval steps so your team stays in control of important actions.',
+      'Track completed tasks and flag exceptions that need human attention.',
+    ],
+    technologies: ['Python', 'LangGraph', 'Docker', 'FastAPI', 'Webhooks', 'PostgreSQL'],
+    capabilities: ['Task automation', 'Tool-calling assistants', 'Multi-step workflows', 'Approval checkpoints', 'Exception flagging'],
+    featured: true,
+  },
+  {
+    id: 'data-analytics',
+    number: '07',
+    title: 'Data & Analytics',
+    description:
+      'Unified data pipelines, automated reporting, and interactive dashboards that turn disparate spreadsheets and software into real-time operational transparency.',
+    deliverables: [
+      'Bring information from spreadsheets, software, and other sources into one place.',
+      'Clean up duplicate, missing, or inconsistent data.',
+      'Build clear reports and dashboards around the numbers your business needs.',
+      'Analyse sales, costs, stock, and customer activity to identify patterns.',
+      'Automate recurring reports so your team spends less time preparing them.',
+    ],
+    technologies: ['React', 'TypeScript', 'D3.js', 'PostgreSQL', 'DuckDB', 'Python', 'Redis'],
+    capabilities: ['Data consolidation', 'Data hygiene & cleanup', 'Executive dashboards', 'Pattern discovery', 'Automated reports'],
+    featured: true,
+  },
+  {
+    id: 'mvp-development',
+    number: '08',
+    title: 'MVP Development',
+    description:
+      'Accelerated engineering to translate your idea into a working product that real users can test, complete core tasks in, and provide early feedback on.',
+    deliverables: [
+      'Help you choose the essential features for the first version of your product.',
+      'Turn your idea into a working product that real users can try.',
+      'Build the main user journey, from signing up to completing the core task.',
+      'Collect early feedback to understand what works and what needs improvement.',
+      'Improve the product in stages as you learn from users.',
+    ],
+    technologies: ['React', 'Next.js', 'TypeScript', 'FastAPI', 'PostgreSQL', 'Tailwind', 'Docker'],
+    capabilities: ['Feature scoping', 'Working product build', 'Core user journey', 'Feedback loops', 'Iterative evolution'],
+    featured: true,
+  },
+  {
+    id: 'recommendation-systems',
+    number: '09',
+    title: 'Recommendation Systems',
+    description:
+      'Intelligent suggestion algorithms and personalization engines that connect your users with relevant products, related add-ons, and tailored content to boost engagement.',
+    deliverables: [
+      'Suggest relevant products based on what customers browse or buy.',
+      'Recommend related items, useful add-ons, or suitable alternatives.',
+      'Personalise content, courses, or services around each user’s interests.',
+      'Include your business rules, such as stock availability and product relevance.',
+      'Track how users respond and use those insights to improve suggestions.',
+    ],
+    technologies: ['Python', 'FastAPI', 'Scikit-learn', 'PostgreSQL', 'Redis', 'Vector Search', 'TypeScript'],
+    capabilities: ['Product suggestions', 'Related add-ons', 'Interest personalization', 'Business rule logic', 'Feedback tracking'],
+    featured: true,
+  },
+  {
+    id: 'chatbots',
+    number: '10',
+    title: 'Chatbots',
+    description:
+      'Custom conversational assistants built on your approved business information to answer common questions, guide visitors, collect enquiries, and hand over to humans.',
+    deliverables: [
+      'Build chatbots that answer common questions about your business.',
+      'Help visitors find products, understand services, or choose their next step.',
+      'Collect enquiry details and pass them to the right person on your team.',
+      'Connect chatbots to approved business information for relevant answers.',
+      'Hand conversations over to a person when a request needs further help.',
+    ],
+    technologies: ['Python', 'FastAPI', 'OpenAI / Claude APIs', 'WebSockets', 'React', 'Redis', 'PostgreSQL'],
+    capabilities: ['24/7 FAQ answers', 'Visitor navigation', 'Lead capture', 'Approved knowledge bases', 'Human escalation'],
+    featured: true,
+  },
+]

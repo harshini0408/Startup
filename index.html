@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary SEO Meta -->
+    <title>Ignite° — Product Engineering Studio</title>
+    <meta name="description" content="Ignite is an independent technology and product engineering studio. We design interfaces, engineer software, and build intelligent systems." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ignite.studio/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Ignite° — Product Engineering Studio" />
+    <meta property="og:description" content="We don't simply write software. We understand problems, design the right experience, engineer the product — and help ship it." />
+    <meta property="og:url" content="https://ignite.studio/" />
+    <meta property="og:site_name" content="Ignite Studio" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ignite° — Product Engineering Studio" />
+    <meta name="twitter:description" content="We don't simply write software. We understand problems, design the right experience, engineer the product — and help ship it." />
+
+    <!-- Theme & Colors -->
+    <meta name="theme-color" content="#080808" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Preconnect Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" />
+
+    <!-- JSON-LD Structured Data: Organization & WebSite -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://ignite.studio/#organization",
+            "name": "Ignite Studio",
+            "url": "https://ignite.studio",
+            "logo": "https://ignite.studio/favicon.svg",
+            "description": "Independent technology and product engineering studio providing web application development, UI/UX design, and AI systems.",
+            "email": "hello@ignite.studio",
+            "sameAs": [
+              "https://github.com",
+              "https://linkedin.com",
+              "https://x.com"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://ignite.studio/#website",
+            "url": "https://ignite.studio",
+            "name": "Ignite°",
+            "publisher": { "@id": "https://ignite.studio/#organization" }
+          },
+          {
+            "@type": "Service",
+            "name": "Product Engineering & AI Integration",
+            "provider": { "@id": "https://ignite.studio/#organization" },
+            "serviceType": "Software Development & Product Design",
+            "areaServed": "Global"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+/* Shared page shell styles — used by all non-home pages */
+.page-shell {
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: clamp(4rem, 8vh, 6rem);
+  padding-top: clamp(8rem, 15vh, 12rem);
+  background-color: var(--color-bg);
+}
+
+.page-shell__meta {
+  margin-bottom: 1.5rem;
+}
+
+.page-shell__heading {
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  color: var(--color-cream);
+  line-height: 1.02;
+  margin-bottom: 2rem;
+}
+
+.page-shell__heading em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+
+.page-shell__sub {
+  font-size: var(--text-lg);
+  color: var(--color-cream-60);
+  max-width: 52ch;
+  line-height: 1.6;
+}
