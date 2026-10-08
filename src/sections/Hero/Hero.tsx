@@ -107,7 +107,7 @@ export function Hero() {
   }, [reduced])
 
   const scrollToWork = () => {
-    const el = document.getElementById('selected-work')
+    const el = document.getElementById('capabilities') || document.getElementById('selected-work')
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
 
@@ -178,7 +178,7 @@ export function Hero() {
 
       {/* Studio indicator */}
       <div className="hero__number" aria-hidden="true">
-        STUDIO / 01
+        STUDIO
       </div>
     </section>
   )

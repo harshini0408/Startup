@@ -5,7 +5,7 @@ export const faqs: Faq[] = [
     id: 'project-types',
     question: 'What kinds of projects do you take on?',
     answer:
-      'We focus on high-fidelity web applications, SaaS product engineering, editorial marketing platforms, real-time analytics cockpits, and production-grade AI / agentic integrations. We partner with ambitious founders, tech scale-ups, and innovation groups who care deeply about design precision and engineering integrity.',
+      'We focus on high-fidelity web applications, SaaS, editorial marketing platforms, real-time analytics cockpits, and production-grade AI / agentic integrations. We partner with ambitious founders, tech scale-ups, and innovation groups who care deeply about design precision and engineering integrity.',
     category: 'Capabilities',
   },
   {

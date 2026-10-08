@@ -9,7 +9,7 @@ export function ServicesPage() {
       <section className="services-hero container">
         <div className="services-hero__meta">
           <span className="label text-accent">IGNITE° CAPABILITIES</span>
-          <span className="label font-mono text-muted">10 DISCIPLINES</span>
+          <span className="label font-mono text-muted">11 DISCIPLINES</span>
         </div>
 
         <h1 className="services-hero__headline font-display">

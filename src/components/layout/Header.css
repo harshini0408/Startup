@@ -10,9 +10,9 @@
   z-index: var(--z-nav);
   padding-block: 1.5rem;
   transition: background-color 0.5s ease,
-              padding-block 0.4s ease,
-              border-color 0.4s ease,
-              backdrop-filter 0.4s ease;
+    padding-block 0.4s ease,
+    border-color 0.4s ease,
+    backdrop-filter 0.4s ease;
 }
 
 .header--scrolled {
@@ -138,14 +138,21 @@
   height: 1px;
   background-color: var(--color-cream);
   transition: transform 0.4s var(--ease-out-expo),
-              width 0.35s var(--ease-out-expo),
-              opacity 0.3s ease;
+    width 0.35s var(--ease-out-expo),
+    opacity 0.3s ease;
 }
 
-.header__menu-line:first-child { width: 24px; }
-.header__menu-line:last-child  { width: 16px; }
+.header__menu-line:first-child {
+  width: 24px;
+}
 
-.header__menu-btn:hover .header__menu-line { width: 24px; }
+.header__menu-line:last-child {
+  width: 16px;
+}
+
+.header__menu-btn:hover .header__menu-line {
+  width: 24px;
+}
 
 .header__menu-btn--open .header__menu-line:first-child {
   width: 24px;
@@ -159,8 +166,13 @@
 
 /* Hide desktop nav on mobile */
 @media (max-width: 900px) {
-  .header__nav { display: none; }
-  .header__cta { display: none; }
+  .header__nav {
+    display: none;
+  }
+
+  .header__cta {
+    display: none;
+  }
 }
 
 /* ============================================================
@@ -177,14 +189,53 @@
   overflow-y: auto;
 }
 
+.fullscreen-menu__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: clamp(0.75rem, 1.5vh, 1.15rem);
+  width: 100%;
+  flex-shrink: 0;
+  border-bottom: 1px solid rgba(239, 236, 230, 0.08);
+}
+
+.fullscreen-menu__close-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  background: none;
+  border: 1px solid rgba(239, 236, 230, 0.22);
+  border-radius: 999px;
+  padding: 0.4rem 1.1rem;
+  color: var(--color-cream);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.fullscreen-menu__close-btn:hover {
+  background-color: rgba(183, 154, 107, 0.12);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  transform: scale(1.03);
+}
+
+.fullscreen-menu__close-icon {
+  font-size: 0.88rem;
+  line-height: 1;
+}
+
 .fullscreen-menu__inner {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 4rem;
-  align-items: start;
-  padding-top: clamp(6rem, 12vh, 10rem);
-  padding-bottom: 4rem;
-  min-height: 100vh;
+  gap: clamp(2.5rem, 5vw, 4.5rem);
+  align-items: center;
+  padding-top: clamp(1rem, 2vh, 1.75rem);
+  padding-bottom: clamp(1.25rem, 2.5vh, 2rem);
+  flex: 1;
+  min-height: 0;
 }
 
 .fullscreen-menu__list {
@@ -204,9 +255,9 @@
 
 .fullscreen-menu__link {
   display: flex;
-  align-items: baseline;
-  gap: 1.25rem;
-  padding-block: clamp(1rem, 2.5vh, 1.75rem);
+  align-items: center;
+  gap: 0.85rem;
+  padding-block: clamp(0.55rem, 1.3vh, 0.95rem);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -216,24 +267,26 @@
   transform: translateX(8px);
 }
 
-.fullscreen-menu__number {
-  font-family: var(--font-sans);
-  font-size: var(--text-xs);
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  color: var(--color-cream-38);
+.fullscreen-menu__link--active .fullscreen-menu__label {
+  color: var(--color-accent);
+}
+
+.fullscreen-menu__active-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  box-shadow: 0 0 10px rgba(183, 154, 107, 0.7);
   flex-shrink: 0;
-  margin-top: 0.3em;
-  transition: color 0.3s ease;
 }
 
 .fullscreen-menu__label {
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 7vw, 5.5rem);
+  font-size: clamp(2.1rem, 4.8vh, 3.5rem);
   font-weight: 300;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   color: var(--color-cream);
-  line-height: 1;
+  line-height: 1.1;
   transition: color 0.35s ease, transform 0.4s var(--ease-out-expo);
 }
 
@@ -241,8 +294,8 @@
 .fullscreen-menu__info {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  padding-top: 0.5rem;
+  gap: 1rem;
+  padding-top: 0;
 }
 
 .fullscreen-menu__email {

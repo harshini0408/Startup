@@ -77,7 +77,7 @@ export function Technology() {
         {/* Section Header */}
         <div className="technology__header">
           <div className="technology__meta">
-            <span className="label text-accent">06 / TECHNOLOGY</span>
+            <span className="label text-accent">TECHNOLOGY</span>
             <span className="label font-mono technology__tag">
               STACK SELECTION
             </span>

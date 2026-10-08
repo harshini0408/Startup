@@ -23,12 +23,12 @@
 }
 
 .industries__headline {
-  font-size: clamp(2.4rem, 6vw, 4.8rem);
-  line-height: 1.02;
-  letter-spacing: -0.04em;
+  font-size: clamp(1.85rem, 3.2vw, 2.75rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
   color: var(--color-cream);
-  max-width: 18ch;
-  margin-bottom: 1.5rem;
+  max-width: 22ch;
+  margin-bottom: 1rem;
 }
 
 .industries__sub {

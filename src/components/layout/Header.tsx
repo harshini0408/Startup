@@ -21,11 +21,12 @@ const NAV_ITEMS = [
 ]
 
 const MENU_ITEMS = [
-  { label: 'Services', href: '/services', number: '01' },
-  { label: 'Work',     href: '/work',     number: '02' },
-  { label: 'About',    href: '/about',    number: '03' },
-  { label: 'Insights', href: '/insights', number: '04' },
-  { label: 'Contact',  href: '/contact',  number: '05' },
+  { label: 'Home',     href: '/' },
+  { label: 'Services', href: '/services' },
+  { label: 'Work',     href: '/work' },
+  { label: 'About',    href: '/about' },
+  { label: 'Insights', href: '/insights' },
+  { label: 'Contact',  href: '/contact' },
 ]
 
 export function Header() {
@@ -166,32 +167,58 @@ export function Header() {
             role="dialog"
             aria-label="Navigation menu"
           >
+            {/* Fullscreen menu top header bar with Brand and Cross button */}
+            <div className="fullscreen-menu__bar container">
+              <Link
+                to="/"
+                className="header__brand"
+                onClick={() => setMenuOpen(false)}
+                aria-label={`${brand.brandName} — Home`}
+              >
+                <span className="header__brand-name">{brand.brandName}</span>
+                <span className="header__brand-suffix" aria-hidden="true">{brand.brandSuffix}</span>
+              </Link>
+
+              <button
+                type="button"
+                className="fullscreen-menu__close-btn"
+                onClick={() => setMenuOpen(false)}
+                aria-label="Close menu and return"
+              >
+                <span className="fullscreen-menu__close-text font-mono">CLOSE</span>
+                <span className="fullscreen-menu__close-icon" aria-hidden="true">✕</span>
+              </button>
+            </div>
+
             <div className="fullscreen-menu__inner container">
               {/* Left: giant nav */}
               <nav aria-label="Fullscreen navigation">
                 <ul className="fullscreen-menu__list" role="list">
-                  {MENU_ITEMS.map(({ label, href, number }, i) => (
-                    <li key={href} className="fullscreen-menu__item">
-                      <motion.div
-                        className="overflow-hidden"
-                        custom={i}
-                        variants={menuItemVariants}
-                        initial={reduced ? false : 'closed'}
-                        animate="open"
-                        exit={reduced ? {} : 'closed'}
-                      >
-                        <Link
-                          to={href}
-                          className="fullscreen-menu__link"
-                          onClick={() => setMenuOpen(false)}
+                  {MENU_ITEMS.map(({ label, href }, i) => {
+                    const isActive = location.pathname === href
+                    return (
+                      <li key={href} className="fullscreen-menu__item">
+                        <motion.div
+                          className="overflow-hidden"
+                          custom={i}
+                          variants={menuItemVariants}
+                          initial={reduced ? false : 'closed'}
+                          animate="open"
+                          exit={reduced ? {} : 'closed'}
                         >
-                          <span className="fullscreen-menu__number">{number}</span>
-                          <span className="fullscreen-menu__label">{label}</span>
-                        </Link>
-                      </motion.div>
-                      <div className="fullscreen-menu__divider" aria-hidden="true" />
-                    </li>
-                  ))}
+                          <Link
+                            to={href}
+                            className={`fullscreen-menu__link ${isActive ? 'fullscreen-menu__link--active' : ''}`}
+                            onClick={() => setMenuOpen(false)}
+                          >
+                            <span className="fullscreen-menu__label">{label}</span>
+                            {isActive && <span className="fullscreen-menu__active-dot" aria-hidden="true" />}
+                          </Link>
+                        </motion.div>
+                        <div className="fullscreen-menu__divider" aria-hidden="true" />
+                      </li>
+                    )
+                  })}
                 </ul>
               </nav>
 

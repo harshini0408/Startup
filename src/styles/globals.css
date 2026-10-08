@@ -179,7 +179,7 @@ h4, h5, h6 {
   color: var(--color-cream-38);
 }
 
-/* Enhanced Section Eyebrow Headings (02 / CAPABILITIES, 03 / SELECTED WORK, etc.) */
+/* Refined Section Eyebrow Headings (02 / CAPABILITIES, etc.) */
 .capabilities__meta .text-accent,
 .selected-work__meta .text-accent,
 .why-us__meta .text-accent,
@@ -191,9 +191,9 @@ h4, h5, h6 {
 .services-hero__meta .text-accent,
 .section-heading-kicker {
   font-family: var(--font-mono);
-  font-size: clamp(1.1rem, 1.5vw, 1.45rem) !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.16em !important;
+  font-size: 0.8rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
   color: var(--color-accent) !important;
   text-transform: uppercase;
   display: inline-flex;
@@ -210,9 +210,9 @@ h4, h5, h6 {
 .about-teaser__tag,
 .faq-section__tag {
   font-family: var(--font-mono);
-  font-size: clamp(0.85rem, 1.1vw, 1rem) !important;
-  letter-spacing: 0.12em !important;
-  color: var(--color-cream-60) !important;
+  font-size: 0.72rem !important;
+  letter-spacing: 0.1em !important;
+  color: var(--color-cream-38) !important;
 }
 
 /* Outlined text */

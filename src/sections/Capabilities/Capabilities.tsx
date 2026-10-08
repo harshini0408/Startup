@@ -54,6 +54,11 @@ const PREVIEW_DETAILS: Record<string, { badge: string; metrics: string[]; highli
     metrics: ['Instant FAQ resolution', 'Enquiry data collection', 'Smooth human handover'],
     highlight: 'Chatbots that answer questions, guide visitors, and triage incoming leads.',
   },
+  'ai-customer-support-voice-agents': {
+    badge: 'VOICE & SUPPORT AGENTS',
+    metrics: ['Omnichannel support', 'Voice & chat workflows', 'CRM & ticketing sync'],
+    highlight: 'AI support systems and voice agents handling routine conversations with human handover.',
+  },
 }
 
 export function Capabilities() {
@@ -73,7 +78,7 @@ export function Capabilities() {
         {/* Section Header */}
         <div className="capabilities__header">
           <div className="capabilities__meta">
-            <span className="label text-accent">02 / CAPABILITIES</span>
+            <span className="label text-accent">CAPABILITIES</span>
             <span className="label capabilities__studio-tag">DISCIPLINES</span>
           </div>
           <h2 className="capabilities__headline font-display">

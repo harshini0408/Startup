@@ -16,7 +16,7 @@ export function FaqSection() {
         {/* Section Header */}
         <div className="faq-section__header">
           <div className="faq-section__meta">
-            <span className="label text-accent">09 / QUESTIONS & ANSWERS</span>
+            <span className="label text-accent">QUESTIONS & ANSWERS</span>
             <span className="label font-mono faq-section__tag">FAQ [08]</span>
           </div>
           <h2 className="faq-section__headline font-display">

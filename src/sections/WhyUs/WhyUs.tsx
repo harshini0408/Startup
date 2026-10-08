@@ -48,7 +48,7 @@ export function WhyUs() {
         {/* Section Header */}
         <div className="why-us__header">
           <div className="why-us__meta">
-            <span className="label text-accent">04 / WHY US</span>
+            <span className="label text-accent">WHY US</span>
             <span className="label font-mono why-us__ethos-tag">
               WORKING PRINCIPLES
             </span>

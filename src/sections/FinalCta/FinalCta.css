@@ -1,6 +1,6 @@
 .final-cta {
   position: relative;
-  padding: clamp(7rem, 15vh, 12rem) 0;
+  padding: clamp(4.5rem, 8vh, 6.5rem) 0;
   background-color: var(--color-charcoal);
   overflow: hidden;
   border-top: 1px solid rgba(239, 236, 230, 0.08);
@@ -36,18 +36,18 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 900px;
+  max-width: 800px;
 }
 
 .final-cta__status {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.4rem 0.95rem;
+  padding: 0.35rem 0.85rem;
   background-color: rgba(183, 154, 107, 0.08);
   border: 1px solid rgba(183, 154, 107, 0.25);
   border-radius: 999px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .final-cta__pulse {
@@ -65,19 +65,19 @@
 }
 
 .final-cta__headline {
-  font-size: clamp(3rem, 8.5vw, 6.8rem);
-  line-height: 0.96;
-  letter-spacing: -0.04em;
+  font-size: clamp(2rem, 4.2vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
   color: var(--color-cream);
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .final-cta__sub {
-  font-size: clamp(1.05rem, 1.8vw, 1.3rem);
+  font-size: clamp(0.95rem, 1.25vw, 1.08rem);
   color: var(--color-cream-60);
   line-height: 1.6;
   max-width: 52ch;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2rem;
 }
 
 .final-cta__actions {
@@ -85,7 +85,7 @@
   align-items: center;
   gap: 2rem;
   flex-wrap: wrap;
-  margin-bottom: clamp(4rem, 8vh, 6rem);
+  margin-bottom: clamp(2.5rem, 5vh, 3.5rem);
 }
 
 .final-cta__btn-primary {

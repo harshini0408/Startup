@@ -76,6 +76,7 @@ export const SERVICE_OPTIONS = [
   'Backend/API',
   'Recommendation Systems',
   'Chatbots',
+  'AI Customer Support & Voice Agents',
   'Not sure yet / Need discovery',
 ] as const
 
@@ -112,6 +113,7 @@ export const CONTACT_PROJECT_TYPES = [
   'AI / Agentic Integration',
   'Recommendation Systems',
   'Chatbots',
+  'AI Customer Support & Voice Agents',
   'MVP Build',
   'Backend & Infrastructure',
   'Not sure yet / Discovery Call',

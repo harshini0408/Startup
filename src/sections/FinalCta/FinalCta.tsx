@@ -8,8 +8,8 @@ import './FinalCta.css'
 
 export function FinalCta() {
   const sectionRef = useRef<HTMLElement>(null)
-  const auraRef    = useRef<HTMLDivElement>(null)
-  const reduced    = usePrefersReducedMotion()
+  const auraRef = useRef<HTMLDivElement>(null)
+  const reduced = usePrefersReducedMotion()
 
   useEffect(() => {
     if (reduced) return
@@ -53,11 +53,11 @@ export function FinalCta() {
         </div>
 
         {/* Monumental statement */}
-        <h2 className="final-cta__headline font-display">
+        <h6 className="final-cta__headline font-display">
           Have something<br />
           <span className="italic font-normal">worth building?</span><br />
           Let’s make it real.
-        </h2>
+        </h6>
 
         <p className="final-cta__sub font-sans">
           Tell us about your product challenge, technical roadmap, or MVP vision.

@@ -6,8 +6,8 @@
 
 /* Hero */
 .services-hero {
-  margin-bottom: clamp(4rem, 8vh, 6rem);
-  padding-bottom: 3rem;
+  margin-bottom: clamp(3rem, 6vh, 4.5rem);
+  padding-bottom: 2.25rem;
   border-bottom: 1px solid rgba(239, 236, 230, 0.08);
 }
 
@@ -15,24 +15,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .services-hero__headline {
-  font-size: clamp(3rem, 7.5vw, 6.5rem);
-  line-height: 0.98;
-  letter-spacing: -0.04em;
+  font-size: clamp(2rem, 3.8vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
   color: var(--color-cream);
-  max-width: 16ch;
-  margin-bottom: 2rem;
+  max-width: 20ch;
+  margin-bottom: 1.25rem;
 }
 
 .services-hero__sub {
-  font-size: clamp(1.1rem, 1.8vw, 1.35rem);
+  font-size: clamp(0.95rem, 1.2vw, 1.08rem);
   color: var(--color-cream-60);
-  line-height: 1.6;
-  max-width: 58ch;
-  margin-bottom: 2.5rem;
+  line-height: 1.65;
+  max-width: 52ch;
+  margin-bottom: 2rem;
 }
 
 .services-hero__anchors {

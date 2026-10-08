@@ -18,4 +18,5 @@ def list_services():
         {"id": "mvp", "title": "MVP Development"},
         {"id": "recommendation", "title": "Recommendation Systems"},
         {"id": "chatbots", "title": "Chatbots"},
+        {"id": "voice-support", "title": "AI Customer Support & Voice Agents"},
     ]

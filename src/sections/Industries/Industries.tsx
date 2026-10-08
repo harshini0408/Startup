@@ -62,7 +62,7 @@ export function Industries() {
         {/* Header */}
         <div className="industries__header">
           <div className="industries__meta">
-            <span className="label text-accent">07 / DOMAINS & SECTORS</span>
+            <span className="label text-accent">DOMAINS & SECTORS</span>
             <span className="label font-mono industries__tag">
               AREAS OF EXPLORATION
             </span>

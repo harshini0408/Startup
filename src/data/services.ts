@@ -171,4 +171,37 @@ export const services: Service[] = [
     capabilities: ['24/7 FAQ answers', 'Visitor navigation', 'Lead capture', 'Approved knowledge bases', 'Human escalation'],
     featured: true,
   },
+  {
+    id: 'ai-customer-support-voice-agents',
+    number: '11',
+    title: 'AI Customer Support & Voice Agents',
+    description:
+      'Custom AI support systems that handle routine customer conversations across chat and voice, answer using your approved business information, complete simple support actions, and hand over to your team whenever human help is needed.',
+    deliverables: [
+      'Build AI support assistants that answer customer questions using your products, FAQs, policies, SOPs, and internal knowledge.',
+      'Create voice agents for tasks such as appointment booking, lead qualification, order-status enquiries, basic support, and information collection.',
+      'Deploy assistants across website chat, WhatsApp, or other supported communication channels based on your business workflow.',
+      'Connect support agents with CRM, helpdesk, booking, ticketing, or internal systems so they can retrieve information, create requests, and update records.',
+      'Add human handover, conversation summaries, escalation rules, and support analytics so your team stays in control of important or uncertain cases.',
+    ],
+    technologies: [
+      'Python',
+      'FastAPI',
+      'OpenAI / Claude APIs',
+      'Speech-to-Text / TTS',
+      'RAG / Vector Search',
+      'WebSockets',
+      'PostgreSQL',
+      'Redis',
+      'CRM / Helpdesk APIs',
+    ],
+    capabilities: [
+      'AI support assistants',
+      'Voice agents',
+      'Omnichannel chat',
+      'CRM & ticketing integration',
+      'Human handover & analytics',
+    ],
+    featured: true,
+  },
 ]
